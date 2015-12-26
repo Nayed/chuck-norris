@@ -1,11 +1,9 @@
-'use strict'
-
 import Vue from 'vue'
 import App from './components/App.vue'
 import Home from './components/Home.vue'
-/*import SecretQuote from './components/SecretQuote.vue'
+/*import SecretQuote from './components/SecretQuote.vue'*/
 import Signup from './components/Signup.vue'
-import Login from './components/Login.vue'*/
+import Login from './components/Login.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
@@ -21,13 +19,13 @@ router.map({
     }/*,
     'secretquote': {
         component: SecretQuote
-    },
+    }*/,
     '/login': {
         component: Login
     },
     'signup': {
         component: Signup
-    }*/
+    }
 })
 
 // Redirect to the home route if any routes are unmatched

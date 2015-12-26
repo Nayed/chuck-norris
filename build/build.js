@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(3);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/auth/index.js\""); }());
+	module.exports = __webpack_require__(31);
 
 
 /***/ },
@@ -73,18 +73,6 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _SecretQuote = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/SecretQuote.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _SecretQuote2 = _interopRequireDefault(_SecretQuote);
-
-	var _Signup = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Signup.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _Signup2 = _interopRequireDefault(_Signup);
-
-	var _Login = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Login.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _Login2 = _interopRequireDefault(_Login);
-
 	var _vueRouter = __webpack_require__(11);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
@@ -95,6 +83,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/*import SecretQuote from './components/SecretQuote.vue'
+	import Signup from './components/Signup.vue'
+	import Login from './components/Login.vue'*/
+
 	_vue2.default.use(_vueResource2.default);
 	_vue2.default.use(_vueRouter2.default);
 
@@ -104,16 +96,16 @@
 	router.map({
 	    '/home': {
 	        component: _Home2.default
-	    },
-	    'secretquote': {
-	        component: _SecretQuote2.default
-	    },
-	    '/login': {
-	        component: _Login2.default
-	    },
-	    'signup': {
-	        component: _Signup2.default
-	    }
+	    } /*,
+	      'secretquote': {
+	         component: SecretQuote
+	      },
+	      '/login': {
+	         component: Login
+	      },
+	      'signup': {
+	         component: Signup
+	      }*/
 	});
 
 	// Redirect to the home route if any routes are unmatched
@@ -13775,6 +13767,12 @@
 	    return _.resource = Resource;
 	};
 
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	"use strict";
 
 /***/ }
 /******/ ]);

@@ -1,7 +1,11 @@
 ```bash
+git clone https://github.com/Nayed/chuck-norris.git
+
+cd chuck-norris
+
 npm install
 
-webpack
+npm run dev
 
 # new terminal window
 cd server
